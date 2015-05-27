@@ -1629,7 +1629,7 @@ class Underscore
      *
      * @return object,array
      */
-    public static function extend($destination, $sources)
+    public static function extend(&$destination, $sources)
     {
         $sources = array_slice(func_get_args(), 1);
 
